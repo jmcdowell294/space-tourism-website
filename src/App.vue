@@ -3,7 +3,7 @@ import { RouterLink, RouterView, useRouter} from 'vue-router';
 import NavBar from './components/NavBar.vue';
 </script>
 
-<template>
+<template v-if="backgrounds[3]">
   <div class = "wrapper" :class="this.backgrounds[this.curBackground]">
     <NavBar @changeNav="changeBackground($event)"/>
     <RouterView />
