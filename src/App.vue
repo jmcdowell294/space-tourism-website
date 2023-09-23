@@ -3,7 +3,7 @@ import { RouterLink, RouterView, useRouter} from 'vue-router';
 import NavBar from './components/NavBar.vue';
 </script>
 
-<template v-if="backgrounds[3]">
+<template v-if="backgrounds[3] == 'technology'">
   <div class = "wrapper" :class="this.backgrounds[this.curBackground]">
     <NavBar @changeNav="changeBackground($event)"/>
     <RouterView />
@@ -20,7 +20,6 @@ import NavBar from './components/NavBar.vue';
     }
   },
   created(){
-    this.curBackground = 0,
     this.backgrounds =['home', 'destination', 'crew', 'technology']
   },
 
