@@ -19,6 +19,10 @@ import NavBar from './components/NavBar.vue';
       backgrounds:['home', 'destination', 'crew', 'technology']
     }
   },
+  created(){
+    this.curBackground = 0,
+    this.backgrounds =['home', 'destination', 'crew', 'technology']
+  },
 
   methods: {
     changeBackground(num) {
