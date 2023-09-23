@@ -67,7 +67,7 @@
       this.curDest = num;
     },
     getImgUrl(){
-      return new URL('../assets/destination/image-' + this.destinations[this.curDest] +'.png', import.meta.url).href;
+      return new URL('../assets/destination/image-' + destinations[curDest] +'.png', import.meta.url).href;
     },
 
   },
