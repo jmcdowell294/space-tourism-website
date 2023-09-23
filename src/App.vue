@@ -4,7 +4,7 @@ import NavBar from './components/NavBar.vue';
 </script>
 
 <template v-if="backgrounds[3] == 'technology'">
-  <div class = "wrapper" :class="this.backgrounds[this.curBackground]">
+  <div class = "wrapper" :class="backgrounds[curBackground]">
     <NavBar @changeNav="changeBackground($event)"/>
     <RouterView />
   </div>
