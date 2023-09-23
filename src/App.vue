@@ -21,6 +21,7 @@ import NavBar from './components/NavBar.vue';
   },
   created(){
     this.backgrounds =['home', 'destination', 'crew', 'technology']
+    console.log(this.backgrounds)
   },
 
   methods: {
