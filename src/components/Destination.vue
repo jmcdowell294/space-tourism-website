@@ -67,7 +67,15 @@
       this.curDest = num;
     },
     getImgUrl(){
-      return new URL('../assets/destination/image-' + this.destinations[this.curDest] +'.png', import.meta.url).href;
+      if(this.curDest == 0){
+        return new URL('../assets/destination/image-moon.png', import.meta.url).href;
+      }else if(this.curDest == 1){
+        return new URL('../assets/destination/image-mars.png', import.meta.url).href;
+      }else if(this.curDest == 2){
+        return new URL('../assets/destination/image-europa.png', import.meta.url).href;
+      }else{
+        return new URL('../assets/destination/image-titan.png', import.meta.url).href;
+      }
     },
 
   },
